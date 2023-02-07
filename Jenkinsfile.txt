@@ -1,9 +1,9 @@
 pipeline {
   agent any
   stages {
-    stage('hello') {
+    stage('git') {
       steps {
-        sh 'echo "Hello World"'
+        git branch: 'main', url: 'https://github.com/DeepakMani05/Jenkins_github_CI_CD.git'
       }
     }
   }
